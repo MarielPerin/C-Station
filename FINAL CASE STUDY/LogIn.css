@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #ff9d9c;
+    --secondary-color: #fb7d7d;
+    --accent-color: #fd91a1;
+    --background-color: rgba(255, 255, 255, 0.9);
+    --text-color: #333;
+    --border-radius: 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("PARTY ESSENTIALS PICTURES/LogInBG.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 400px;
+    width: 200%;
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header img {
+    width: 350px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.login-form {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+label {
+    margin-left: 40%;
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-left: 40%;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius);
+}
+
+button.submit {
+    margin-left: 33%;
+    font-size: 1.2em;
+    background-color: var(--secondary-color);
+    padding: 10px 20px;
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.submit:hover {
+    background-color: var(--primary-color);
+}

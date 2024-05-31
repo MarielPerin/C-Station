@@ -1,0 +1,228 @@
+:root {
+    --violet: rgb(217, 215, 241);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    padding: 0.5% 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(255, 115, 115);
+}
+
+header .logo {
+    font-size: 200%;
+    color: #ff7373;
+    font-weight: bolder;
+    width: fit-content;
+}
+
+.navbar a {
+    font-size: 100%;
+    color: rgb(121, 115, 115);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    color: rgb(255, 115, 115);
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.navbar .active{
+    color: rgb(255, 115, 115);
+}
+
+.icons a {
+    font-size: 100%;
+    color: rgb(121, 115, 115);
+    margin: 1.5rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.icons a:hover {
+    color: rgb(255, 115, 115);
+    border-bottom: 3px solid rgb(121, 115, 115);
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+}
+
+.contact {
+    padding: 60px 20px;
+    background-image: url("https://merimeri.co.uk/cdn/shop/files/Header-1.png?v=1692867332&width=1000");
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.contact .contact-container {
+    background: #ffcccb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.contact .heading-section {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact .contact-wrap {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.contact .contact-wrap h3 {
+    font-size: 2em;
+    color: #f89090;
+    margin-bottom: 20px;
+}
+
+.contact .contact-wrap p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.contact .dbox {
+    margin-bottom: 20px;
+}
+
+.contact .dbox .text {
+    font-size: 16px;
+    color: #666;
+}
+
+.contact .dbox .text a {
+    color:#f89090;
+    text-decoration: underline;
+}
+
+.contact .contactForm .form-group {
+    margin-bottom: 20px;
+}
+
+.contact .contactForm .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact .contactForm .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .contactForm .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 10px;
+}
+
+.contact .contactForm .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+}
+
+.contact .contactForm .btn-primary {
+    background-color:#f89090;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .contactForm .btn-primary:hover {
+    background-color: #f89090;
+}
+
+.contact .contactForm .submitting {
+    display: none;
+}
+
+.contact .social-media {
+    margin-top: 40px;
+}
+
+.contact .social-media h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact .social-media p {
+    display: flex;
+    gap: 20px;
+}
+
+.contact .social-media a {
+    color: #f89090;
+    font-size: 16px;
+}
+
+
+.error {
+    border-color: #f89090;
+}
+
+.error-message {
+    color: #f89090;
+    margin-top: 5px;
+    font-size: 0.875em;
+}
